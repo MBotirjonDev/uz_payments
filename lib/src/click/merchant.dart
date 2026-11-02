@@ -88,8 +88,9 @@ class ClickMerchantHandler {
       return MerchantResponse.json(reply(ClickErrorCode.badRequest, 'Error in request from click'));
     }
     final amount = parseSomToTiyin(f['amount']!);
-    if (amount == null)
+    if (amount == null) {
       return MerchantResponse.json(reply(ClickErrorCode.incorrectAmount, 'Incorrect parameter amount'));
+    }
 
     final req = ClickRequest(
       clickTransId: clickTransId,

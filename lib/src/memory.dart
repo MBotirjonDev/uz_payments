@@ -39,8 +39,9 @@ class InMemoryPaymeBackend implements PaymeBackend {
   @override
   Future<PaymeTransaction?> findOpenTransactionForOrder(String orderId) async {
     for (final tx in transactions.values) {
-      if (tx.orderId == orderId && (tx.state == PaymeState.created || tx.state == PaymeState.performed))
+      if (tx.orderId == orderId && (tx.state == PaymeState.created || tx.state == PaymeState.performed)) {
         return tx.copy();
+      }
     }
     return null;
   }

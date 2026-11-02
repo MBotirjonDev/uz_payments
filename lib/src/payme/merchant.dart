@@ -261,8 +261,9 @@ class PaymeMerchantHandler {
 
   Future<Map<String, dynamic>> _changePassword(Map<String, dynamic> p) async {
     final password = _string(p, 'password');
-    if (password.trim().isEmpty)
+    if (password.trim().isEmpty) {
       throw _error(PaymeErrorCode.invalidRequest, 'New password is not specified.', data: 'password');
+    }
     if (onChangePassword == null) throw _error(PaymeErrorCode.internal, 'Changing the password is not supported.');
     if (constantTimeEquals(password, _key)) {
       throw _error(PaymeErrorCode.insufficientPrivilege, 'Insufficient privilege. Incorrect new password.');
