@@ -1,0 +1,21 @@
+name: uz_payments
+description: >-
+  Payme and Click payments for Dart and Flutter. Checkout links for the app and
+  verified merchant webhooks (Payme Merchant API, Click SHOP-API) for the server.
+  Zero dependencies.
+version: 0.1.0
+repository: https://github.com/MBotirjonDev/uz_payments
+issue_tracker: https://github.com/MBotirjonDev/uz_payments/issues
+topics:
+  - payments
+  - payme
+  - click
+  - uzbekistan
+  - flutter
+
+environment:
+  sdk: ^3.3.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0
