@@ -10,6 +10,7 @@
 </p>
 
 <p align="center">
+  <a href="https://pub.dev/packages/uz_payments"><img src="https://img.shields.io/pub/v/uz_payments?logo=dart" alt="pub.dev"></a>
   <a href="https://github.com/MBotirjonDev/uz_payments/actions/workflows/ci.yml"><img src="https://github.com/MBotirjonDev/uz_payments/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/tests-52%20passing-brightgreen" alt="52 tests">
   <img src="https://img.shields.io/badge/dependencies-0-blue" alt="zero dependencies">
@@ -41,9 +42,10 @@ The existing Dart packages only build the payment link. **uz_payments implements
 
 ```yaml
 dependencies:
-  uz_payments:
-    git: https://github.com/MBotirjonDev/uz_payments
+  uz_payments: ^0.1.0
 ```
+
+or run `dart pub add uz_payments` (`flutter pub add uz_payments` in a Flutter app).
 
 ## Quick start
 
