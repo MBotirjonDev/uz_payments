@@ -14,3 +14,10 @@ dart test
 ```
 
 Cite the official provider documentation or reference template for protocol behavior.
+
+## Releasing
+
+1. Bump `version` in `pubspec.yaml` and add a section to `CHANGELOG.md`.
+2. Merge to `main` and wait for CI to pass.
+3. Create a GitHub release with the tag `v<version>` (for example `v0.1.1`).
+   The `Publish to pub.dev` workflow uploads the package; no tokens are needed.

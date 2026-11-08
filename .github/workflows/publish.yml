@@ -1,0 +1,15 @@
+# Publishes to pub.dev when a version tag (v1.2.3) is pushed, for example by
+# creating a GitHub release. Authentication uses GitHub's OIDC token, so no
+# secrets are stored in the repository. The tag must match pubspec.yaml.
+name: Publish to pub.dev
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+*'
+
+jobs:
+  publish:
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
