@@ -1,0 +1,7 @@
+# Files left out of the pub.dev package (the README loads the images from GitHub).
+docs/
+.github/
+.dart_tool/
+pubspec.lock
+pubspec_overrides.yaml
+build/
